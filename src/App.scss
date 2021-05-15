@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.c-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.c-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.c-label {
+  font-weight: bolder;
+  flex-grow: 2;
+  padding: 4px 4px;
+  margin: 4px 4px;
+  width: 150px;
+}
+
+.c-value {
+  flex-grow: 8;
+  padding: 4px 4px;
+  margin: 4px 4px;
+}
+
+.header {
+  min-height: 90px;
+  margin: 4px 4px;
+  padding: 8px 8px;
+  justify-content: center;
+
+  &--count {
+    @extend .header;
+    flex-grow: 2;
+    align-items: center;
+  }
+
+  &--info {
+    @extend .header;
+    flex-grow: 8;
+  }
+}
+
+.content {
+  background-color: lightgray;
+  height: 150px;
+  margin: 4px 4px;
+  padding: 8px 8px;
+}
