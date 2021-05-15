@@ -2,7 +2,7 @@ import React from 'react';
 import './App.scss';
 import {PeopleFill} from "react-bootstrap-icons";
 import { useEmployeeData}  from "./hooks/useEmployeeData";
-import EmployeeTable from "./component/EmployeeTable";
+import EmployeeTable from "./components/EmployeeTable";
 import {Alert} from "react-bootstrap";
 
 const App = () => {
